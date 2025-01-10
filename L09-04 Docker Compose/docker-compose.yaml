@@ -1,10 +1,10 @@
 services:
   web-fe:
-    build: .
+    build: . # . means dockerfile contains in same folder
     command: python app.py
     ports:
       - 5000:5000
   redis:
-    image: "redis:alpine"
+    image: "redis:alpine" # using image from docker hub
     ports:
       - 6379
