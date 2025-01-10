@@ -12,7 +12,7 @@ services:
       - DATABASE_HOST=db
       - NODE_ENV=development
     ports:
-      - 3001:80
+      - 3001:80 # can acces this service with port 3001 from outside , 80 is internal port for internal communication b/w 2 services 
       - 9229:9229
       - 9230:9230
     secrets:
